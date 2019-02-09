@@ -6,9 +6,38 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--color-background);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+a {
+  color: var(--color-accent);
+}
+:root {
+  --color-background: #ececec;
+  --color-border: #cacfd5;
+  --color-text-default: #0b1016;
+  --color-base: #f4f5f6;
+  --color-accent: #157efb;
+  --color-highlight: #686868;
+  --color-code-backgound: #ffffff;
+  --color-code-remove: #fcb8c1;
+  --color-code-add: #aef1bf;
+}
+/*noinspection CssInvalidMediaFeature*/
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: #323232;
+    --color-border: #464646;
+    --color-text-default: #d7d9da;
+    --color-base: #293238;
+    --color-accent: #157efb;
+    --color-highlight: #686868;
+    --color-code-backgound: #1c1e23;
+    --color-code-remove: #422529;
+    --color-code-add: #283c2f;
+  }
 }
