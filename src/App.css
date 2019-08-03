@@ -1,7 +1,7 @@
 .App {
   text-align: center;
 }
-
+*{box-sizing: border-box}
 .App-header {
   min-height: 100vh;
   display: flex;
@@ -22,7 +22,7 @@
 }
 
 .sub-line {
-  font-size: 0.6em;
+  /*font-size: 0.6em;*/
   font-family: monaco, monospace;
   background-color: var(--color-code-backgound);
   padding: 5px 2px 3px;
@@ -42,4 +42,36 @@
   border-radius: 2px;
   margin: 0 2px;
   padding: 0 1px;
+}
+.portfolio-feature{
+  background-color: var(--color-code-backgound);
+  /*border: 1px solid var(--color-border);*/
+  box-shadow: 0 0 10px -8px #000,0 4px 10px -10px #000;
+  border-radius: 24px;
+  overflow: hidden;
+  /*padding: 64px;*/
+  margin: 64px;
+  color: var(--color-text-default);
+  display: flex;
+  flex-direction: row;
+}
+.img{
+  background: #9C7FFF;
+  width: 256px;
+  height: 256px;
+}
+.desc{
+  flex: 1;
+  height: 256px;
+  text-align: left;
+  padding: 8px;
+}
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: var(--color-text-default);
 }
